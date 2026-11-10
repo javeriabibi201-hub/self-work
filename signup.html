@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Website information -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Website title -->
+    <title>Sign Up | Javairia Bibi</title>
+
+    <!-- Font Awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <!-- CSS file -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Navigation bar -->
+    <header>
+      <nav class="navbar">
+        <!-- Website logo -->
+        <h2 class="logo">
+          <i class="fa-solid fa-code"></i>
+          Javairia Bibi
+        </h2>
+
+        <!-- Navigation links -->
+        <ul>
+          <li>
+            <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+          </li>
+          <li>
+            <a href="about.html"><i class="fa-solid fa-user"></i> About</a>
+          </li>
+          <li>
+            <a href="skills.html"><i class="fa-solid fa-gears"></i> Skills</a>
+          </li>
+          <li>
+            <a href="projects.html"
+              ><i class="fa-solid fa-briefcase"></i> Projects</a
+            >
+          </li>
+          <li>
+            <a href="contact.html"
+              ><i class="fa-solid fa-envelope"></i> Contact</a
+            >
+          </li>
+        </ul>
+
+        <!-- Login and Signup buttons -->
+        <div>
+          <a href="login.html" class="btn">
+            <i class="fa-solid fa-user-lock"></i> Login
+          </a>
+
+          <a href="signup.html" class="btn">
+            <i class="fa-solid fa-user-plus"></i> Sign Up
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Signup section -->
+    <section class="page signup-page">
+      <!-- Signup card -->
+      <div class="signup-container">
+        <!-- Signup icon -->
+        <div class="signup-icon">
+          <i class="fa-solid fa-user-plus"></i>
+        </div>
+
+        <!-- Signup heading -->
+        <h1>Create <span>Account</span></h1>
+
+        <!-- Signup description -->
+        <p class="signup-intro">Create your account to get started.</p>
+
+        <!-- Signup form -->
+        <form id="signupForm">
+          <!-- Name input -->
+          <label for="signupName">
+            <i class="fa-solid fa-user"></i>
+            Full Name
+          </label>
+
+          <input
+            type="text"
+            id="signupName"
+            placeholder="Enter your full name"
+            required
+          />
+
+          <!-- Email input -->
+          <label for="signupEmail">
+            <i class="fa-solid fa-envelope"></i>
+            Email Address
+          </label>
+
+          <input
+            type="email"
+            id="signupEmail"
+            placeholder="Enter your email"
+            required
+          />
+
+          <!-- Password input -->
+          <label for="signupPassword">
+            <i class="fa-solid fa-lock"></i>
+            Password
+          </label>
+
+          <input
+            type="password"
+            id="signupPassword"
+            placeholder="Create your password"
+            required
+          />
+
+          <!-- Signup button -->
+          <button type="submit" class="btn signup-btn">
+            <i class="fa-solid fa-user-plus"></i>
+            Create Account
+          </button>
+
+          <!-- Signup response message -->
+          <p id="signupMessage"></p>
+
+          <!-- Login link -->
+          <p class="login-text">
+            Already have an account?
+            <a href="login.html">Login</a>
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <!-- JavaScript file -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

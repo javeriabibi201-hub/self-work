@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Website information -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Website title -->
+    <title>Login | Javairia Bibi</title>
+
+    <!-- Font Awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <!-- CSS file -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Navigation bar -->
+    <header>
+      <nav class="navbar">
+        <!-- Website logo -->
+        <h2 class="logo">
+          <i class="fa-solid fa-code"></i>
+          Javairia Bibi
+        </h2>
+
+        <!-- Navigation links -->
+        <ul>
+          <li>
+            <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+          </li>
+          <li>
+            <a href="about.html"><i class="fa-solid fa-user"></i> About</a>
+          </li>
+          <li>
+            <a href="skills.html"><i class="fa-solid fa-gears"></i> Skills</a>
+          </li>
+          <li>
+            <a href="projects.html"
+              ><i class="fa-solid fa-briefcase"></i> Projects</a
+            >
+          </li>
+          <li>
+            <a href="contact.html"
+              ><i class="fa-solid fa-envelope"></i> Contact</a
+            >
+          </li>
+        </ul>
+
+        <!-- Login and Signup buttons -->
+        <div>
+          <a href="login.html" class="btn">
+            <i class="fa-solid fa-user-lock"></i> Login
+          </a>
+
+          <a href="signup.html" class="btn">
+            <i class="fa-solid fa-user-plus"></i> Sign Up
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Login section -->
+    <section class="page login-page">
+      <!-- Login card -->
+      <div class="login-container">
+        <!-- Login icon -->
+        <div class="login-icon">
+          <i class="fa-solid fa-user-lock"></i>
+        </div>
+
+        <!-- Login heading -->
+        <h1>Welcome <span>Back!</span></h1>
+
+        <!-- Login description -->
+        <p class="login-intro">Please enter your details to login.</p>
+
+        <!-- Login form -->
+        <form id="loginForm">
+          <!-- Email input -->
+          <label for="loginEmail">
+            <i class="fa-solid fa-envelope"></i>
+            Email Address
+          </label>
+
+          <input
+            type="email"
+            id="loginEmail"
+            placeholder="Enter your email"
+            required
+          />
+
+          <!-- Password input -->
+          <label for="loginPassword">
+            <i class="fa-solid fa-lock"></i>
+            Password
+          </label>
+
+          <input
+            type="password"
+            id="loginPassword"
+            placeholder="Enter your password"
+            required
+          />
+
+          <!-- Show password -->
+          <label class="show-password">
+            <input type="checkbox" id="showPassword" />
+            Show Password
+          </label>
+
+          <!-- Login button -->
+          <button type="submit" class="btn login-btn">
+            <i class="fa-solid fa-right-to-bracket"></i>
+            Login
+          </button>
+
+          <!-- Login response message -->
+          <p id="loginMessage"></p>
+
+          <!-- Signup link -->
+          <p class="signup-text">
+            Don't have an account?
+            <a href="signup.html">Sign Up</a>
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <!-- JavaScript file -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
